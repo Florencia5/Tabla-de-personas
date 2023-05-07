@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>generar archivo JSON</title>
+  <!-- Agregar estilo de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container-fluid p-3">
+    <h2>generar archivo JSON</h2>
+  </div>
+  <!-- Eliminar div vacío y mover clase "p-3" al div siguiente -->
+  <div class="container-fluid">
+    <div class="p-3">
+      contenidos de la base de datos
+    </div>
+    <table id="tabla_ubicaciones" class="table table-hover table-bordered border-secondary m-0">
+      <!-- Mover la etiqueta "head" dentro de la etiqueta "table" -->
+      <thead>
+        <tr class="tabla small bg-secondary text-white">
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">apellido</th>
+          <th scope="col">edad</th>
+          <th scope="col">ubicacion</th>
+          <th scope="col">foto</th>
+        </tr>
+      </thead>
+      <tbody id="body_ubicaciones"></tbody>
+    </table>
+    <!-- Cerrar etiqueta "table" que estaba abierta fuera de la tabla -->
+    <div id="error_servidor" class="text-center fs-5"></div>
+    <div class="p-3 text-center">
+      <!-- Mover botón dentro del div anterior -->
+      <button type="button" name="button" class="btn btn-primary p-3">GENERAR JSON</button>
+    </div>
+  </div>
+  <!-- Agregar scripts de Bootstrap y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
